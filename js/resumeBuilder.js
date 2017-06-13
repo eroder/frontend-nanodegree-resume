@@ -20,28 +20,6 @@ var bio = {
    "skills" : ["Html", "Css", "JavaScript", "Photoshop", "Illustrator"]
 };
 
-//var formattedName = HTMLheaderName.replace("%data%", name);
-//var formattedRole = HTMLheaderRole.replace("%data%", role);
-
-var formattedName = HTMLheaderName.replace("%data%", bio.name);
-var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-
-var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
-var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
-var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
-var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
-
-var formattedPic = HTMLbioPic.replace("%data%", bio.pictureURL);
-
-var formattedWmsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
-var formattedSkills = HTMLskills.replace("%data%", bio.skills);
-
-var work = {};
-work.position = "Designer";
-work.employer = "Grupo Grow";
-work.years = 3;
-
 var education = {
    "schools": [
       {
@@ -70,6 +48,58 @@ var education = {
       }
    ]
 }
+
+var work = {
+   "jobs": [
+      {
+         "position": "Designer",
+         "employer": "Grupo Grow",
+         "years": 3
+      },
+      {
+         "position": "Consultor",
+         "employer": "Coelho da Fonsecaa",
+         "years": 1
+      }
+   ]
+}
+
+var project = {
+   "client": [
+      {
+         "name": "Cliente 1",
+         "jobs": "Site",
+         "date": "",
+         "url": ""
+      },
+      {
+         "name": "Cliente 2",
+         "jobs": "Site",
+         "date": "",
+         "url": ""
+      },
+      {
+         "name": "Cliente 3",
+         "jobs": "Site",
+         "date": "",
+         "url": ""
+      }
+   ]
+}
+
+var formattedName = HTMLheaderName.replace("%data%", bio.name);
+var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
+var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
+var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+var formattedPic = HTMLbioPic.replace("%data%", bio.pictureURL);
+var formattedWmsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
+var formattedSkills = HTMLskills.replace("%data%", bio.skills);
+
+
+
 
 $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
